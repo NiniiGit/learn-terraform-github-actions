@@ -9,12 +9,13 @@ terraform {
   }
 
   backend "remote" {
-    organization = "REPLACE_ME"
+    organization = "infracloud_AWS"
 
     workspaces {
       name = "gh-actions-demo"
     }
   }
+
 }
 
 provider "aws" {
